@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a home page that will prepare me to reach the chamber site and the final project of this course.">
-    <meta name="author" content="MURUNGI INNOCENT">
+    <meta name="description" content="Home page for Murungi Innocent showcasing web development projects, courses, and portfolio work to reach the chamber site and the final project of this course.">
+    <meta name="author" content="Murungi Innocent">
     <title>Home | Murungi Innocent</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
     
 </head>
 
@@ -43,16 +49,16 @@
 
         <section class="card">
             <h2>Student photo</h2>
-            <img src="images/student image.jpeg" alt="Student Photo" class="student-photo">
+            <img src="images/student-image.jpeg" alt="Student-Photo" class="student-photo">
         </section>
 
       <section class="card">
     <h2>Web Certificate Courses</h2>
 
     <div class="buttons">
-      <button onclick="filterCourses('all')">All</button>
-      <button onclick="filterCourses('WDD')">WDD</button>
-      <button onclick="filterCourses('CSE')">CSE</button>
+      <button data-filter="all">All</button>
+      <button data-filter="WDD">WDD</button>
+      <button data-filter="CSE">CSE</button>
     </div>
 
     <div id="courses"></div>
@@ -74,6 +80,5 @@
 
 </footer>
 
-<script src="scripts/script.js" defer></script>
 </body>
 </html>

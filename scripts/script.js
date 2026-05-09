@@ -19,6 +19,14 @@ const courses = [
   { code: "CSE 110", subject: "CSE", credits: 2, completed: true }
 ];
 
+const buttons = document.querySelectorAll(".buttons button");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const type = btn.getAttribute("data-filter");
+    filterCourses(type);
+  });
+});
 
 // DISPLAY COURSES
 function displayCourses(courseList) {
