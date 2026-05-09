@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a home page that will prepare me to reach the chamber site and the final project of this course.">
+    <meta name="author" content="MURUNGI INNOCENT">
+    <title>Home | Murungi Innocent</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container"> 
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <span class="site-title">Murungi Innocent</span>
+
+            <button id="menuBtn">☰</button>
+
+            </div>
+            <nav id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="chamber.html">Chamber</a>
+                <a href="final.html">Final</a>
+
+            </nav>
+    </header>
+    
+    <main>
+        <h1>HOME</h1>
+
+        <section CLASS="card">
+            <h2>About Me</h2>
+            <p>
+               I am a creative and tech-driven individual with a strong interest in software development, design, and digital experiences.
+                I enjoy building things that stand out—whether it’s websites, scripts, or visually engaging edits—always aiming for a polished and high-quality result with a unique style. 
+                I like experimenting with tools like Blender and coding environments, and I’m constantly looking for ways to improve my skills and make my projects more professional and impactful. 
+               At the same time, I stay focused on learning, especially in my studies, making sure I understand both the creative and technical sides of everything I build.</p>
+        </section>
+
+        <section class="card">
+            <h2>Student photo</h2>
+            <img src="images/student image.jpeg" alt="Student Photo" class="student-photo">
+        </section>
+
+      <section class="card">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="buttons">
+      <button onclick="filterCourses('all')">All</button>
+      <button onclick="filterCourses('WDD')">WDD</button>
+      <button onclick="filterCourses('CSE')">CSE</button>
+    </div>
+
+    <div id="courses"></div>
+
+    <p id="credits"></p>
+  </section>  
+    </main>
+<footer>
+    <div class="socials">
+        <a href="https://github.com/murungi197" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/murungi-innocent-782270367/" target="_blank">LinkedIn</a>
+        <a href="https://x.com/GokuKlaus" target="_blank">X</a>
+    </div>
+
+    <p> 
+        © <span id="year"></span>•Murungi Innocent• Uganda
+     </p>
+     <p id="lastModified"></p>
+
+</footer>
+
+<script src="scripts/script.js" defer></script>
+</body>
+</html>
