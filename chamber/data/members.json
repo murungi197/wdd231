@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Kira Tech Solutions",
+    "address": "Kira Town",
+    "phone": "+256700111111",
+    "website": "https://kira-tech.com",
+    "image": "tech.jpg",
+    "level": 3
+  },
+  {
+    "name": "Fresh Foods Market",
+    "address": "Namugongo Road",
+    "phone": "+256700222222",
+    "website": "https://freshfoods.com",
+    "image": "food.jpg",
+    "level": 2
+  },
+  {
+    "name": "Smart Hardware",
+    "address": "Kira Center",
+    "phone": "+256700333333",
+    "website": "https://hardware.com",
+    "image": "hardware.jpg",
+    "level": 1
+  },
+  {
+    "name": "City Salon",
+    "address": "Bulindo",
+    "phone": "+256700444444",
+    "website": "https://salon.com",
+    "image": "salon.jpg",
+    "level": 2
+  },
+  {
+    "name": "Kira Motors",
+    "address": "Kira Road",
+    "phone": "+256700555555",
+    "website": "https://motors.com",
+    "image": "cars.jpg",
+    "level": 3
+  },
+  {
+    "name": "Bright Schools",
+    "address": "Kira",
+    "phone": "+256700666666",
+    "website": "https://school.com",
+    "image": "school.jpg",
+    "level": 1
+  },
+  {
+    "name": "Health Clinic",
+    "address": "Kira",
+    "phone": "+256700777777",
+    "website": "https://clinic.com",
+    "image": "clinic.jpg",
+    "level": 3
+  }
+]

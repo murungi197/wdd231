@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    background: #192341;
+    color: rgb(187, 136, 136);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.open {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.list {
+    display: block;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}

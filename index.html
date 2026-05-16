@@ -1,84 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Murungi Innocent showcasing web development projects, courses, and portfolio work to reach the chamber site and the final project of this course.">
-    <meta name="author" content="Murungi Innocent">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home page for Murungi Innocent showcasing web development projects, courses, and portfolio work to reach the chamber site and the final project of this course."
+    />
+    <meta name="author" content="Murungi Innocent" />
+    <!-- Open Graph Meta Tags (Facebook) -->
+    <meta property="og:title" content="Home | Murungi Innocent" />
+    <meta
+      property="og:description"
+      content="Explore Murungi Innocent's web development projects, coursework, and portfolio."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/images/student-image.png"
+    />
+    <meta property="og:url" content="https://yourdomain.com/index.html" />
+    <meta property="og:type" content="website" />
     <title>Home | Murungi Innocent</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/script.js" defer></script>
-    
-</head>
+    <link rel="icon" href="favicon.ico" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="header-container"> 
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <span class="site-title">Murungi Innocent</span>
+      <div class="header-container">
+        <img src="images/logo.png" alt="Logo" class="logo" />
+        <span class="site-title">Murungi Innocent</span>
 
-            <button id="menuBtn">☰</button>
-
-            </div>
-            <nav id="navMenu">
-                <a href="index.html">Home</a>
-                <a href="chamber.html">Chamber</a>
-                <a href="final.html">Final</a>
-
-            </nav>
+        <button id="menuBtn">☰</button>
+      </div>
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="chamber.html">Chamber</a>
+        <a href="final.html">Final</a>
+      </nav>
     </header>
-    
+
     <main>
-        <h1>HOME</h1>
+      <h1>HOME</h1>
 
-        <section CLASS="card">
-            <h2>About Me</h2>
-            <p>
-               I am a creative and tech-driven individual with a strong interest in software development, design, and digital experiences.
-                I enjoy building things that stand out—whether it’s websites, scripts, or visually engaging edits—always aiming for a polished and high-quality result with a unique style. 
-                I like experimenting with tools like Blender and coding environments, and I’m constantly looking for ways to improve my skills and make my projects more professional and impactful. 
-               At the same time, I stay focused on learning, especially in my studies, making sure I understand both the creative and technical sides of everything I build.</p>
-        </section>
-
-        <section class="card">
-            <h2>Student photo</h2>
-            <img src="images/student-image.jpeg" alt="Student-Photo" class="student-photo">
-        </section>
+      <section CLASS="card">
+        <h2>About Me</h2>
+        <p>
+          I am a creative and tech-driven individual with a strong interest in
+          software development, design, and digital experiences. I enjoy
+          building things that stand out—whether it’s websites, scripts, or
+          visually engaging edits—always aiming for a polished and high-quality
+          result with a unique style. I like experimenting with tools like
+          Blender and coding environments, and I’m constantly looking for ways
+          to improve my skills and make my projects more professional and
+          impactful. At the same time, I stay focused on learning, especially in
+          my studies, making sure I understand both the creative and technical
+          sides of everything I build.
+        </p>
+      </section>
 
       <section class="card">
-    <h2>Web Certificate Courses</h2>
+        <h2>Student photo</h2>
+        <img
+          src="images/student-image.png"
+          alt="Student-Photo"
+          class="student-photo"
+        />
+      </section>
 
-    <div class="buttons">
-      <button data-filter="all">All</button>
-      <button data-filter="WDD">WDD</button>
-      <button data-filter="CSE">CSE</button>
-    </div>
+      <section class="card">
+        <h2>Web Certificate Courses</h2>
 
-    <div id="courses"></div>
+        <div class="buttons">
+          <button data-filter="all">All</button>
+          <button data-filter="WDD">WDD</button>
+          <button data-filter="CSE">CSE</button>
+        </div>
 
-    <p id="credits"></p>
-  </section>  
+        <div id="courses"></div>
+
+        <p id="credits"></p>
+      </section>
     </main>
-<footer>
-    <div class="socials">
+    <footer>
+      <div class="socials">
         <a href="https://github.com/murungi197" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/murungi-innocent-782270367/" target="_blank">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/murungi-innocent-782270367/"
+          target="_blank"
+          >LinkedIn</a
+        >
         <a href="https://x.com/GokuKlaus" target="_blank">X</a>
-    </div>
+      </div>
 
-    <p> 
-        © <span id="year"></span>•Murungi Innocent• Uganda
-     </p>
-     <p id="lastModified"></p>
-
-</footer>
-
-</body>
+      <p>© <span id="year"></span>•Murungi Innocent• Uganda</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>

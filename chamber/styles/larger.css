@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #menuBtn {
+        display: none;
+        align-items: right;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

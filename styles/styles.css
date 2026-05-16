@@ -81,6 +81,12 @@ h1 {
   max-width: 250px;
   display: block;
   margin: auto;
+  border-radius: 100px;
+}
+
+card h2 {
+  margin-top: 10px;
+  text-align: right;
 }
 
 /* BUTTONS */
