@@ -20,6 +20,10 @@ nav ul.open {
     display: block;
 }
 
+h1{
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -32,6 +36,6 @@ nav ul.open {
 }
 
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid #6d6a6a;
     padding: 1rem;
 }
