@@ -4,7 +4,7 @@
     "address": "Kira Town",
     "phone": "+256700111111",
     "website": "https://kira-tech.com",
-    "image": "tech.jpg",
+    "image": "tech.png",
     "level": 3
   },
   {
@@ -12,7 +12,7 @@
     "address": "Namugongo Road",
     "phone": "+256700222222",
     "website": "https://freshfoods.com",
-    "image": "food.jpg",
+    "image": "food.png",
     "level": 2
   },
   {
@@ -20,7 +20,7 @@
     "address": "Kira Center",
     "phone": "+256700333333",
     "website": "https://hardware.com",
-    "image": "hardware.jpg",
+    "image": "hardware.png",
     "level": 1
   },
   {
@@ -28,7 +28,7 @@
     "address": "Bulindo",
     "phone": "+256700444444",
     "website": "https://salon.com",
-    "image": "salon.jpg",
+    "image": "salon.png",
     "level": 2
   },
   {
@@ -36,7 +36,7 @@
     "address": "Kira Road",
     "phone": "+256700555555",
     "website": "https://motors.com",
-    "image": "cars.jpg",
+    "image": "cars.png",
     "level": 3
   },
   {
@@ -44,7 +44,7 @@
     "address": "Kira",
     "phone": "+256700666666",
     "website": "https://school.com",
-    "image": "school.jpg",
+    "image": "school.png",
     "level": 1
   },
   {
@@ -52,7 +52,7 @@
     "address": "Kira",
     "phone": "+256700777777",
     "website": "https://clinic.com",
-    "image": "clinic.jpg",
+    "image": "clinic.png",
     "level": 3
   }
 ]

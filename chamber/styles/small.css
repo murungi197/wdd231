@@ -1,41 +1,81 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    background: #ffffff;
+    color: #111;
 }
 
-header, footer {
-    background: #192341;
-    color: rgb(187, 136, 136);
+/* HEADER */
+header {
+    background: #1e3a8a;
     padding: 1rem;
-    text-align: center;
 }
 
 nav ul {
+    display: none;
     list-style: none;
     padding: 0;
-    display: flex;
 }
 
 nav ul.open {
     display: block;
 }
 
-h1{
-    text-align: center;
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
 }
 
+.active {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* TOGGLE */
+.view-toggle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 1rem;
 }
 
+/* LIST */
 .list {
     display: block;
 }
 
+/* CARD */
 .card {
-    border: 1px solid #6d6a6a;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
     padding: 1rem;
 }
