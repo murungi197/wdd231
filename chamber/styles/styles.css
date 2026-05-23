@@ -5,6 +5,11 @@ body {
   color: #111;
 }
 
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* HEADER */
 header {
   background: #1e3a8a;

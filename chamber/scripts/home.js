@@ -2,28 +2,31 @@
 document.getElementById("menu").onclick = () => {
   document.getElementById("nav-links").classList.toggle("open");
 };
+ 
 
 /* WEATHER */
-const apiKey = "YOUR_API_KEY";
-const url = `https://api.openweathermap.org/data/2.5/forecast?q=London&appid=${apiKey}&units=metric`;
+const url = "https://api.open-meteo.com/v1/forecast?latitude=0.39&longitude=32.61&daily=temperature_2m_max,temperature_2m_min&current_weather=true&timezone=auto";
 
 async function getWeather() {
-  const res = await fetch(url);
-  const data = await res.json();
+  const response = await fetch(url);
+  const data = await response.json();
 
+  // Current temp
   document.getElementById("temp").textContent =
-    `Temp: ${data.list[0].main.temp}°C`;
+    `Temperature: ${data.current_weather.temperature}°C`;
 
   document.getElementById("desc").textContent =
-    data.list[0].weather[0].description;
+    `Wind Speed: ${data.current_weather.windspeed} km/h`;
 
+  // 3-day forecast
   const forecast = document.getElementById("forecast");
+  forecast.innerHTML = "";
 
   for (let i = 0; i < 3; i++) {
-    let day = data.list[i * 8];
-    let p = document.createElement("p");
-    p.textContent = `${day.main.temp}°C`;
-    forecast.appendChild(p);
+    const day = document.createElement("p");
+    day.textContent =
+      `Day ${i + 1}: High ${data.daily.temperature_2m_max[i]}°C / Low ${data.daily.temperature_2m_min[i]}°C`;
+    forecast.appendChild(day);
   }
 }
 
