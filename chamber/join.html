@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Kira Chamber</title>
+
+    <meta
+      name="description"
+      content="The join page of  Kira Chamber of Commerce connects businesses, 
+  promotes growth, and shares events, weather, and local opportunities."/>
+    <meta name="author" content="Murungi Innocent" />
+    <meta
+      name="keywords"
+      content="Kira Chamber of Commerce, local businesses"/>
+
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="scripts/join.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+
+    <meta property="og:title" content="Join Kira Chamber Page" />
+    <meta
+      property="og:description"
+      content="Discover local businesses, events, and opportunities with Kira Chamber of Commerce."/>
+    <meta
+      property="og:image"
+      content="https://murungi197.github.io/wdd231/chamber/images/hero.png"/>
+    <meta
+      property="og:url"
+      content="https://murungi197.github.io/wdd231/chamber/index.html"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <button id="menu">☰</button>
+        <ul id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+<body>
+
+
+<main class="container">
+
+  <!-- FORM -->
+  <form method="get" action="thankyou.html">
+
+    <label title="Enter your first name">
+      First Name:
+      <input type="text" name="fname" required autocomplete="given-name">
+    </label>
+
+    <label title="Enter your last name">
+      Last Name:
+      <input type="text" name="lname" required autocomplete="family-name">
+    </label>
+
+    <label title="Your role in the organization">
+      Organization Title:
+      <input type="text" name="orgtitle"
+        pattern="[A-Za-z\\-\\s]{7,}"
+        autocomplete="organization-title">
+    </label>
+
+    <label title="Enter your email">
+      Email:
+      <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
+    </label>
+
+    <label title="Enter your phone number">
+      Phone:
+      <input type="tel" name="phone" required autocomplete="tel">
+    </label>
+
+    <label title="Enter business name">
+      Business Name:
+      <input type="text" name="business" required autocomplete="organization">
+    </label>
+
+    <label title="Choose membership level">
+      Membership Level:
+      <select name="membership">
+        <option value="np">NP Membership</option>
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+      </select>
+    </label>
+
+    <label title="Describe your business">
+      Description:
+      <textarea name="description"></textarea>
+    </label>
+
+    <!-- Hidden timestamp -->
+    <input type="hidden" id="timestamp" name="timestamp">
+
+    <input type="submit" value="Apply Now">
+
+  </form>
+
+  <!-- MEMBERSHIP CARDS -->
+  <section class="cards">
+    <div class="card">
+      <h3>NP Membership</h3>
+      <button onclick="openModal('np')">View Benefits</button>
+    </div>
+
+    <div class="card">
+      <h3>Bronze</h3>
+      <button onclick="openModal('bronze')">View Benefits</button>
+    </div>
+
+    <div class="card">
+      <h3>Silver</h3>
+      <button onclick="openModal('silver')">View Benefits</button>
+    </div>
+
+    <div class="card">
+      <h3>Gold</h3>
+      <button onclick="openModal('gold')">View Benefits</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()">✖</span>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<footer>
+      <p>Contact: info@kirachamber.org | +256 700 000000</p>
+      <p>Murungi Innocent | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
