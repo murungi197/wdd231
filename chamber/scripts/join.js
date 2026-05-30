@@ -3,6 +3,10 @@ document.getElementById("menu").onclick = () => {
   document.getElementById("nav-links").classList.toggle("open");
 };
 
+document.querySelectorAll(".open-btn").forEach(btn => {
+  btn.addEventListener("click", openModal);
+});
+
 // timestamp
 document.getElementById("timestamp").value = new Date().toISOString();
 

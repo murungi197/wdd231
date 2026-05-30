@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Kira Chamber</title>
 
-    <meta
-      name="description"
-      content="The join page of  Kira Chamber of Commerce connects businesses, 
-  promotes growth, and shares events, weather, and local opportunities."/>
+    <meta name="description" content="Join the Kira Chamber of Commerce to connect with local businesses, 
+          grow your network, and explore new opportunities in your community.">
     <meta name="author" content="Murungi Innocent" />
     <meta
       name="keywords"
@@ -26,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"/>
 
-    <meta property="og:title" content="Join Kira Chamber Page" />
+    <meta property="og:title" content="Join the Kira Chamber of Commerce Today">
     <meta
       property="og:description"
       content="Discover local businesses, events, and opportunities with Kira Chamber of Commerce."/>
@@ -49,43 +47,40 @@
           <li><a href="discover.html">Discover</a></li>
         </ul>
       </nav>
+      <h1>Join Kira Chamber of Commerce</h1>
     </header>
 
 <main class="container">
-
+    
   <!-- FORM -->
   <form method="get" action="thankyou.html">
 
     <label title="Enter your first name">
       First Name:
-      <input type="text" name="fname" required autocomplete="given-name">
+      <input type="text" name="fname" title="Enter your first name" required>
     </label>
 
     <label title="Enter your last name">
       Last Name:
-      <input type="text" name="lname" required autocomplete="family-name">
+      <input type="text" name="lname" title="Enter your last name" required autocomplete="family-name">
     </label>
 
-    <label title="Your role in the organization">
-      Organization Title:
-      <input type="text" name="orgtitle"
-        pattern="[A-Za-z\\-\\s]{7,}"
-        autocomplete="organization-title">
-    </label>
+    <input type="text" name="orgTitle"
+            pattern="[A-Za-z\s\-]{7,}"
+            title="At least 7 characters. Letters, spaces, and hyphens only.">
 
-    <label title="Enter your email">
-      Email:
-      <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
-    </label>
+    <input type="email" name="email"
+           placeholder="example@email.com"
+           title="Enter your email address" required>
 
     <label title="Enter your phone number">
       Phone:
-      <input type="tel" name="phone" required autocomplete="tel">
+      <input type="tel" name="phone" title="Enter your phone number" required autocomplete="tel">
     </label>
 
     <label title="Enter business name">
       Business Name:
-      <input type="text" name="business" required autocomplete="organization">
+      <input type="text" name="business" title="Enter business name" required autocomplete="organization">
     </label>
 
     <label title="Choose membership level">
@@ -114,22 +109,18 @@
   <section class="cards">
     <div class="card">
       <h3>NP Membership</h3>
-      <button onclick="openModal('np')">View Benefits</button>
     </div>
 
     <div class="card">
-      <h3>Bronze</h3>
-      <button onclick="openModal('bronze')">View Benefits</button>
+      <h3>Bronze</h3>    
     </div>
 
     <div class="card">
       <h3>Silver</h3>
-      <button onclick="openModal('silver')">View Benefits</button>
-    </div>
+          </div>
 
     <div class="card">
       <h3>Gold</h3>
-      <button onclick="openModal('gold')">View Benefits</button>
     </div>
   </section>
 
@@ -151,3 +142,4 @@
 
 </body>
 </html>
+
