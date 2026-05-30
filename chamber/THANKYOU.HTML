@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
 </head>
 
 <body>
 
-<h1>Thank You for Applying! <br> And we welcome you to Kira Chamber of Commerce</h1>
+<h1>Thank You for Applying!<br>We welcome you to Kira Chamber of Commerce</h1>
 
 <div id="results"></div>
 
@@ -17,12 +16,12 @@
   const params = new URLSearchParams(window.location.search);
 
   document.getElementById("results").innerHTML = `
-    <p><strong>First Name:</strong> ${params.get("fname")}</p>
-    <p><strong>Last Name:</strong> ${params.get("lname")}</p>
-    <p><strong>Email:</strong> ${params.get("email")}</p>
-    <p><strong>Phone:</strong> ${params.get("phone")}</p>
-    <p><strong>Business:</strong> ${params.get("business")}</p>
-    <p><strong>Submitted:</strong> ${params.get("timestamp")}</p>
+    <p><strong>First Name:</strong> ${params.get("firstName") || ''}</p>
+    <p><strong>Last Name:</strong> ${params.get("lastName") || ''}</p>
+    <p><strong>Email:</strong> ${params.get("email") || ''}</p>
+    <p><strong>Phone:</strong> ${params.get("phone") || ''}</p>
+    <p><strong>Business:</strong> ${params.get("organization") || ''}</p>
+    <p><strong>Submitted:</strong> ${params.get("timestamp") || ''}</p>
   `;
 </script>
 
