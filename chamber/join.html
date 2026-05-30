@@ -50,60 +50,52 @@
       <h1>Join Kira Chamber of Commerce</h1>
     </header>
 
-<main class="container">
+<main class="container" >
     
   <!-- FORM -->
   <form method="get" action="thankyou.html">
 
-    <label title="Enter your first name">
-      First Name:
-      <input type="text" name="fname" title="Enter your first name" required>
-    </label>
+  <!-- First Name -->
+  <label for="firstName">First Name</label>
+  <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
 
-    <label title="Enter your last name">
-      Last Name:
-      <input type="text" name="lname" title="Enter your last name" required autocomplete="family-name">
-    </label>
+  <!-- Last Name -->
+  <label for="lastName">Last Name</label>
+  <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
 
-    <input type="text" name="orgTitle"
-            pattern="[A-Za-z\s\-]{7,}"
-            title="At least 7 characters. Letters, spaces, and hyphens only.">
+  <!-- Organization Title -->
+  <label for="orgTitle">Organization Title</label>
+  <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title">
 
-    <input type="email" name="email"
-           placeholder="example@email.com"
-           title="Enter your email address" required>
+  <!-- Email -->
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" autocomplete="email" required>
 
-    <label title="Enter your phone number">
-      Phone:
-      <input type="tel" name="phone" title="Enter your phone number" required autocomplete="tel">
-    </label>
+  <!-- Mobile Phone -->
+  <label for="phone">Mobile Phone</label>
+  <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
-    <label title="Enter business name">
-      Business Name:
-      <input type="text" name="business" title="Enter business name" required autocomplete="organization">
-    </label>
+  <!-- Organization Name -->
+  <label for="organization">Organization Name</label>
+  <input type="text" id="organization" name="organization" autocomplete="organization" required>
 
-    <label title="Choose membership level">
-      Membership Level:
-      <select name="membership">
-        <option value="np">NP Membership</option>
-        <option value="bronze">Bronze</option>
-        <option value="silver">Silver</option>
-        <option value="gold">Gold</option>
-      </select>
-    </label>
+  <!-- Membership Level -->
+  <label for="membership">Membership Level</label>
+  <select id="membership" name="membership">
+    <option value="np">NP Membership (Free)</option>
+    <option value="bronze">Bronze Membership</option>
+    <option value="silver">Silver Membership</option>
+    <option value="gold">Gold Membership</option>
+  </select>
 
-    <label title="Describe your business">
-      Description:
-      <textarea name="description"></textarea>
-    </label>
+  <!-- Organization Description -->
+  <label for="description">Organization Description</label>
+  <textarea id="description" name="description" title="Describe your organization"></textarea>
 
-    <!-- Hidden timestamp -->
-    <input type="hidden" id="timestamp" name="timestamp">
+  <!-- Submit -->
+  <button type="submit">Apply for Membership</button>
 
-    <input type="submit" value="Apply Now">
-
-  </form>
+</form>
 
   <!-- MEMBERSHIP CARDS -->
   <section class="cards">
