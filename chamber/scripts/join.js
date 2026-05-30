@@ -33,11 +33,21 @@ function openModal(event) {
   };
 
   text.textContent = data[type] || "Membership benefit details are not available.";
-  modal.style.display = "block";
+  if (modal) {
+    modal.style.display = "block";
+  }
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  const modal = document.getElementById("modal");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+const closeModalButton = document.getElementById("close-modal");
+if (closeModalButton) {
+  closeModalButton.addEventListener("click", closeModal);
 }
 
 
