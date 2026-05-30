@@ -8,10 +8,20 @@ document.querySelectorAll(".open-btn").forEach(btn => {
 });
 
 // timestamp
-document.getElementById("timestamp").value = new Date().toISOString();
+const timestampElement = document.getElementById("timestamp");
+if (timestampElement) {
+  timestampElement.value = new Date().toISOString();
+}
+
+// last modified footer
+const lastModified = document.getElementById("lastModified");
+if (lastModified) {
+  lastModified.textContent = document.lastModified;
+}
 
 // modal
-function openModal(type) {
+function openModal(event) {
+  const type = event.currentTarget?.dataset?.type || "";
   const modal = document.getElementById("modal");
   const text = document.getElementById("modal-text");
 
@@ -22,7 +32,7 @@ function openModal(type) {
     gold: "Premium benefits and spotlight ads."
   };
 
-  text.textContent = data[type];
+  text.textContent = data[type] || "Membership benefit details are not available.";
   modal.style.display = "block";
 }
 

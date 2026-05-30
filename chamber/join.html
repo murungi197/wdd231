@@ -47,10 +47,11 @@
           <li><a href="discover.html">Discover</a></li>
         </ul>
       </nav>
-      <h1>Join Kira Chamber of Commerce</h1>
+      
     </header>
 
 <main class="container" >
+  <h1>Join Kira Chamber of Commerce</h1>
     
   <!-- FORM -->
   <form method="get" action="thankyou.html">
@@ -92,6 +93,8 @@
   <label for="description">Organization Description</label>
   <textarea id="description" name="description" title="Describe your organization"></textarea>
 
+  <input type="hidden" id="timestamp" name="timestamp">
+
   <!-- Submit -->
   <button type="submit">Apply for Membership</button>
 
@@ -101,18 +104,22 @@
   <section class="cards">
     <div class="card">
       <h3>NP Membership</h3>
+      <button type="button" class="open-btn" data-type="np">View Benefits</button>
     </div>
 
     <div class="card">
-      <h3>Bronze</h3>    
+      <h3>Bronze</h3>
+      <button type="button" class="open-btn" data-type="bronze">View Benefits</button>
     </div>
 
     <div class="card">
       <h3>Silver</h3>
-          </div>
+      <button type="button" class="open-btn" data-type="silver">View Benefits</button>
+    </div>
 
     <div class="card">
       <h3>Gold</h3>
+      <button type="button" class="open-btn" data-type="gold">View Benefits</button>
     </div>
   </section>
 
