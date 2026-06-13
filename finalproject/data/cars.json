@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Lamborghini Aventador",
+    "brand": "Lamborghini",
+    "year": 2022,
+    "hp": 770,
+    "image": "images/aventador.jfif"
+  },
+  {
+    "name": "Ferrari 488 GTB",
+    "brand": "Ferrari",
+    "year": 2021,
+    "hp": 661,
+    "image": "images/ferrari488.jfif"
+  },
+  {
+    "name": "Bugatti Chiron",
+    "brand": "Bugatti",
+    "year": 2023,
+    "hp": 1500,
+    "image": "images/chiron.jfif"
+  },
+  {
+    "name": "Porsche 911 Turbo S",
+    "brand": "Porsche",
+    "year": 2022,
+    "hp": 640,
+    "image": "images/911turbos.jfif"
+  },
+  {
+    "name": "McLaren 720S",
+    "brand": "McLaren",
+    "year": 2021,
+    "hp": 710,
+    "image": "images/720s.jfif"
+  },
+  {
+    "name": "Audi R8 V10 Plus",
+    "brand": "Audi",
+    "year": 2020,
+    "hp": 610,
+    "image": "images/r8v10plus.jfif"
+  },
+  {
+    "name": "Mercedes-AMG GT R",
+    "brand": "Mercedes-Benz",
+    "year": 2021,
+    "hp": 577,
+    "image": "images/amg-gtr.jpg"
+  },
+  {
+    "name": "Nissan GT-R Nismo",
+    "brand": "Nissan",
+    "year": 2022,
+    "hp": 600,
+    "image": "images/gtrnismo.jfif"
+  },
+  {
+    "name": "Chevrolet Corvette Z06",
+    "brand": "Chevrolet",
+    "year": 2020,
+    "hp": 650,
+    "image": "images/corvettez06.jfif"
+  },
+  {
+    "name": "Ford Mustang Shelby GT500",
+    "brand": "Ford",
+    "year": 2021,
+    "hp": 760,
+    "image": "images/shelbygt500.jpg"
+  },
+  {
+    "name": "Dodge Challenger SRT Hellcat",
+    "brand": "Dodge",
+    "year": 2020,
+    "hp": 717,
+    "image": "images/hellcat.jpg"
+  },
+  {
+    "name": "Tesla Model S Plaid",
+    "brand": "Tesla",
+    "year": 2022,
+    "hp": 1020,
+    "image": "images/teslaplaid.jpg"
+  },
+  {
+    "name": "Lexus LC 500",
+    "brand": "Lexus",
+    "year": 2021,
+    "hp": 471,
+    "image": "images/lc500.jpg"
+  },
+  {
+    "name": "Aston Martin DB11",
+    "brand": "Aston Martin",
+    "year": 2020,
+    "hp": 600,
+    "image": "images/db11.jpg"
+  }
+]

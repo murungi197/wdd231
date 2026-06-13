@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Cars | Inno Edits</title>
+  <meta name="description" content="Explore a collection of luxury and cinematic cars by Inno Edits.">
+  <meta name="author" content="Innocent Murungi">
+  <meta property="og:title" content="Inno Edits Cars">
+  <meta property="og:description" content="Luxury car showcase with cinematic visuals">
+  <meta property="og:image" content="https://murungi197.github.io/wdd231/car-showcase/images/preview.jpg">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/cars.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Inno Edits</h1>
+    <nav>
+      <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Luxury Car Collection</h2>
+      <p>Explore high-performance and cinematic vehicles.</p>
+    </section>
+
+    <section class="cars-container"></section>
+
+    <div id="carModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close-btn" aria-label="Close dialog">&times;</span>
+        <img id="modal-img" src="" alt="Selected car preview">
+        <h2 id="modal-title"></h2>
+        <p id="modal-brand"></p>
+        <p id="modal-year"></p>
+        <p id="modal-hp"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Inno Edits</p>
+  </footer>
+</body>
+</html>
