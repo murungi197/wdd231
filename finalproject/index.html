@@ -8,17 +8,18 @@
   <meta name="author" content="Innocent Murungi">
   <meta property="og:title" content="Inno Edits">
   <meta property="og:description" content="Explore luxury cars and cinematic edits">
-  <meta property="og:image" content="images/preview.jpg">
+  <meta property="og:image" content="images/hero.jpg">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="navbar">
     <h1 class="logo">Inno Edits</h1>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">☰</button>
     <nav>
-      <ul class="nav-links">
+      <ul id="nav-links" class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="cars.html">Cars</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cars.html" class="active">Cars</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -62,8 +63,20 @@
     </div>
   </section>
 
+  <section class="quick-links">
+    <h3>Quick Links</h3>
+    <div class="quick-links-grid">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="contact.html">Contact</a>
+      <a href="site-plan.html">Site Plan</a>
+    </div>
+  </section>
+
   <footer>
     <p>© 2026 Inno Edits | All Rights Reserved</p>
   </footer>
+
+  <script src="scripts/menu.js" defer></script>
 </body>
 </html>

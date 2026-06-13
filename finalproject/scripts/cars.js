@@ -1,14 +1,6 @@
 const container = document.querySelector(".cars-container");
-const menuBtn = document.querySelector("#menu-btn");
-const navLinks = document.querySelector("#nav-links");
 const modal = document.getElementById("carModal");
 const closeBtn = document.querySelector(".close-btn");
-
-if (menuBtn && navLinks) {
-  menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-}
 
 async function getCars() {
   try {

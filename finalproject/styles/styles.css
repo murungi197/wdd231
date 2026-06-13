@@ -15,6 +15,14 @@ body {
   background: #0a0a0a;
   color: #fff;
   line-height: 1.5;
+  overflow-x: hidden;
+}
+
+main,
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body::before {
@@ -61,6 +69,17 @@ nav {
   justify-content: center;
 }
 
+.menu-btn {
+  display: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
 .nav-links,
 nav ul {
   list-style: none;
@@ -95,7 +114,10 @@ nav a:hover {
 
 .hero {
   position: relative;
+  width: 100vw;
+  max-width: none;
   min-height: 90vh;
+  margin-left: calc(50% - 50vw);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -127,7 +149,7 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: clamp(2rem, 7vw, 3.5rem);
   margin-bottom: 10px;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   animation: fadeSlide 1.5s ease forwards;
@@ -135,6 +157,7 @@ nav a:hover {
 }
 
 .hero p {
+  font-size: clamp(1rem, 2.3vw, 1.15rem);
   margin-bottom: 20px;
   animation: fadeSlide 2s ease forwards;
   opacity: 0;
@@ -315,6 +338,37 @@ footer {
   background: #000;
 }
 
+.quick-links {
+  padding: 24px 16px 40px;
+  text-align: center;
+}
+
+.quick-links h3 {
+  margin-bottom: 10px;
+  color: #ffd166;
+}
+
+.quick-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quick-links-grid a {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+}
+
+.quick-links-grid a:hover {
+  box-shadow: 0 0 12px rgba(255, 46, 99, 0.35);
+  color: #fff;
+}
+
 @keyframes fadeSlide {
   from {
     opacity: 0;
@@ -349,6 +403,152 @@ footer {
 
   .cars-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar,
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  header {
+    padding: 14px;
+  }
+
+  .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-links,
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(10, 10, 10, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+  }
+
+  .nav-links.show,
+  #nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a,
+  #nav-links a {
+    width: 100%;
+    padding: 0.5rem 0.35rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links,
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .nav-links a,
+  nav a {
+    font-size: 0.95rem;
+    padding: 0.35rem 0.45rem;
+  }
+
+  .hero {
+    min-height: 78vh;
+    padding: 16px;
+  }
+
+  .about,
+  .featured,
+  .contact {
+    padding: 44px 16px;
+  }
+
+  .featured-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: min(100%, 340px);
+  }
+
+  .cars-container {
+    padding: 0.75rem;
+  }
+
+  .car-card {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .nav-links,
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .nav-links a,
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.4rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    gap: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 96vw;
+    padding: 0.75rem;
   }
 }
 
