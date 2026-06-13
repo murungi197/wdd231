@@ -1,0 +1,14 @@
+/* Additional page styles for the final project */
+main {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
